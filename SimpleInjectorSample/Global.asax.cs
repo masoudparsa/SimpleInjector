@@ -19,6 +19,7 @@ namespace SimpleInjectorSample
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             SimpleInjector.SimpleInjectorContainer.Initialize();
             
+            
         }
     }
 }
