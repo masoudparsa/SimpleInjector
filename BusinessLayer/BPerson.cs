@@ -42,7 +42,9 @@ namespace Business
 
         public void AddPerson()
         {
-
+            
+            _personRepository.Add(new Person());
+            _unitOfWork.Commit();
         }
     }
 }

@@ -14,6 +14,6 @@ namespace Repository.Interfaces
         T GetById(int Id);
         IEnumerable<T> GetAll();
         IEnumerable<T> Find(Func<T, bool> predicate);
-        void Save();
+       // void Save();
     }
 }

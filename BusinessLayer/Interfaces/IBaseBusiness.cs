@@ -8,9 +8,9 @@ namespace Business.Interfaces
 {
     public interface IBaseBusiness<T>
     {
-        void Create(T entity);
-        void Delete(T entity);
-        IEnumerable<T> GetAll();
-        void Update(T entity);
+        //void Create(T entity);
+        //void Delete(T entity);
+        //IEnumerable<T> GetAll();
+        //void Update(T entity);
     }
 }

@@ -10,8 +10,8 @@ namespace Repository
 {
     public abstract class BaseRepository<T> :  Interfaces.IBaseRepository<T> where T : class
     {
-        protected DbContext _context;
-        protected IDbSet<T> _dbset;
+        internal DbContext _context;
+        internal IDbSet<T> _dbset;
         public BaseRepository(DbContext context)
         {
             _context = context;
@@ -52,12 +52,14 @@ namespace Repository
                return _dbset.Find(Id);
         }
 
-        public void Save()
-        {
-            
-            _context.SaveChanges();
-        }
+      
 
-        
+        //public void Save()
+        //{
+
+        //    _context.SaveChanges();
+        //}
+
+
     }
 }

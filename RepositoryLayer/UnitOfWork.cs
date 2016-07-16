@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Repository
 {
-    public sealed class UnitOfWork : Interfaces.IUnitOfWork
+    public sealed class UnitOfWork : Interfaces.IUnitOfWork,IDisposable
     {
         /// <summary>
         /// The DbContext
@@ -39,6 +39,7 @@ namespace Repository
         /// <summary>
         /// Disposes the current object
         /// </summary>
+        
         public void Dispose()
         {
             Dispose(true);
